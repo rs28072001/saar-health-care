@@ -4,7 +4,7 @@
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        background: grey;
+        background: #ff8080;
         color: white;
         display: flex;
         align-items: center;

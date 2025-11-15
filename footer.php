@@ -63,7 +63,7 @@
                                           <span class="text-secondary fw-500">10:00 AM - 01:00 PM</span>
                                       </li>
                                       <li class="mb-3 pb-2 border-bottom d-flex align-items-center justify-content-between">
-                                          <span>Monday - Friday (Evening)</span>
+                                          <span>Evening</span>
                                           <span class="text-secondary fw-500">05:30 PM - 08:00 PM</span>
                                       </li>
                                       <li class="d-flex align-items-center justify-content-between">

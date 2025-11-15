@@ -205,6 +205,8 @@ unset($_SESSION['success']);
     <link rel="preload" href="assets/css/core/libs.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="assets/css/kivicare.mine209.css?v=1.0.0" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="assets/css/custom.mine209.css?v=1.0.0" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <noscript>
         <link rel="stylesheet" href="assets/css/core/libs.min.css">
         <link rel="stylesheet" href="assets/css/kivicare.mine209.css?v=1.0.0">
@@ -228,11 +230,20 @@ unset($_SESSION['success']);
                 <div class="row justify-content-center align-items-center">
                     <div class="col-lg-5 col-md-8 col-sm-10">
                         <div class="sign-user_card position-relative bg-white">
-                            <!-- Home Link -->
+                            <!-- Home Button -->
+                             <style>
+                                .home-link .btn:hover {
+                                    background-color: #9effc6ff !important;
+                                    box-shadow: 0 2px 6px rgba(0, 0, 0, 1);
+                                    text-decoration: none;
+                                    color: #242424ff;
+                                }
+                             </style>
                             <div class="home-link position-absolute" style="top: 15px; left: 15px;">
-                                <a href="index.php" class="text-decoration-none d-flex align-items-center text-dark fw-semibold">
-                                    <i class="fas fa-home me-2" style="font-size: 18px; color:#25d366;"></i>
-                                    <span>Home</span>
+                                <a href="/" class="btn btn-success d-flex align-items-center gap-2 fw-semibold"
+                                style="padding: 6px 12px; border-radius: 8px; font-size: 14px; background:#1aac59; border:none; ">
+                                    <i class="fas fa-home"></i>
+                                    Home
                                 </a>
                             </div>
 

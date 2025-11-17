@@ -3,3 +3,7 @@
 *.log
 *.sqlite
 *.lock
+*.env
+*.py
+/.DS_Store
+

@@ -238,6 +238,18 @@
                                     </a>
                                 </div>
                             </li>
+
+                             <li class="ms-3">
+                                  <div class="cursor-pointer" data-bs-toggle="offcanvas"
+                                     data-bs-target="#right-panel-toggle" aria-controls="right-panel-toggle">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22" viewBox="0 0 28 22"
+                                        fill="none">
+                                        <path d="M0 0H24V2H0V0Z" fill="#171C26" />
+                                        <path d="M4 10H28V12H4V10Z" fill="#171C26" />
+                                        <path d="M0 20H24V22H0V20Z" fill="#171C26" />
+                                     </svg>
+                                  </div>
+                               </li>
                         </ul>
                     </div>
                 </div>

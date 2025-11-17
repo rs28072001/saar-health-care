@@ -667,7 +667,7 @@
                   <p class="m-0"> It is a long established fact that a reader will be distracted.</p>
                   <div class="iconbox-button mt-5">
                      <div class="iq-btn-container">
-                        <a class="iq-button iq-btn-link text-capitalize" href="service1.html">
+                        <a class="iq-button iq-btn-link text-capitalize" href="service2.php">
                            read more
                            <span class="btn-link-icon">
                               <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 8 8" fill="none">
@@ -690,7 +690,7 @@
                   <p class="m-0">It is a long established fact that a reader will be distracted.</p>
                   <div class="iconbox-button mt-5">
                      <div class="iq-btn-container">
-                        <a class="iq-button iq-btn-link text-capitalize" href="service1.html">
+                        <a class="iq-button iq-btn-link text-capitalize" href="service2.php">
                            read more
                            <span class="btn-link-icon">
                               <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 8 8" fill="none">
@@ -713,7 +713,7 @@
                   <p class="m-0">It is a long established fact that a reader will be distracted.</p>
                   <div class="iconbox-button mt-5">
                      <div class="iq-btn-container">
-                        <a class="iq-button iq-btn-link text-capitalize" href="service1.html">
+                        <a class="iq-button iq-btn-link text-capitalize" href="service2.php">
                            read more
                            <span class="btn-link-icon">
                               <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 8 8" fill="none">
@@ -736,7 +736,7 @@
                   <p class="m-0">It is a long established fact that a reader will be distracted..</p>
                   <div class="iconbox-button mt-5">
                      <div class="iq-btn-container">
-                        <a class="iq-button iq-btn-link text-capitalize" href="service1.html">
+                        <a class="iq-button iq-btn-link text-capitalize" href="service2.php">
                            read more
                            <span class="btn-link-icon">
                               <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 8 8" fill="none">

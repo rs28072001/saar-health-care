@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" dir="ltr" class="landing-pages">
   
-<!-- Mirrored from templates.iqonic.design/kivicare-dist/html/service1.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Aug 2023 12:27:48 GMT -->
+<!-- Mirrored from templates.iqonic.design/kivicare-dist/html/service2.php by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Aug 2023 12:27:48 GMT -->
 <head>
     <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

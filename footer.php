@@ -41,7 +41,7 @@
                               <ul class="m-0 p-0 list-unstyled footer-menu-link">
                                   <li class="mb-3"><a href="about-us.php"><i
                                               class="fas fa-angle-right me-2"></i>About us</a></li>
-                                  <li class="mb-3"><a href="service1.html"><i
+                                  <li class="mb-3"><a href="service2.php"><i
                                               class="fas fa-angle-right me-2"></i>service</a></li>
                                   <li class="mb-3"><a href="tab-three-column.html"><i
                                               class="fas fa-angle-right me-2"></i>Team</a></li>

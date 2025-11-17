@@ -512,7 +512,7 @@ At Saar Healthcare, we understand that body slimming, Weight loss, Diet and Nutr
                </p>
             </div>            <div class="mt-3 mb-5">
                <div class="iq-btn-container">
-                  <a class="iq-button text-capitalize" href="service1.html">
+                  <a class="iq-button text-capitalize" href="service2.php">
                      <span class="iq-btn-text-holder position-relative">all service</span>
                      <span class="iq-btn-icon-holder">
                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 8 8" fill="none">

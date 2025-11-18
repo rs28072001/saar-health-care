@@ -445,6 +445,14 @@ $pending_count = count($pending_appointments);
 
 <!-- ✅ JavaScript -->
 <script>
+function joinMeeting(link) {
+    if (!link) {
+        alert("Meeting link not available.");
+        return;
+    }
+    window.open(link, "_blank", "noopener,noreferrer");
+}
+
 function openApproveModal(id, name) {
     document.getElementById('appointment_id').value = id;
     document.getElementById('approveModal').style.display = 'block';

@@ -202,6 +202,66 @@ $pending_count = count($pending_appointments);
         </div>
     </div>
 
+        <!-- ✅ PENDING SECTION -->
+    <div class="appointments-section pending-section">
+        <div class="section-header">
+            <h3><i class="fas fa-clock section-icon"></i> Pending Approval</h3>
+        </div>
+        <?php if (empty($pending_appointments)): ?>
+            <div class="empty-state">
+                <i class="fas fa-check-double"></i>
+                <h3>No Pending Approvals</h3>
+                <p>All appointments have been approved</p>
+            </div>
+        <?php else: ?>
+            <table class="appointments-table">
+                <thead>
+                    <tr>
+                        <th>Patient</th>
+                        <th>Service Type</th>
+                        <th>Requested Time</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="pendingTableBody">
+                    <?php foreach ($pending_appointments as $appointment): 
+                        $patient_name = !empty($appointment['first_name']) ? 
+                            $appointment['first_name'].' '.$appointment['last_name'] : $appointment['name'];
+                        $initials = getInitials($patient_name);
+                    ?>
+                    <tr id="row-<?= $appointment['id'] ?>">
+                        <td>
+                            <div class="patient-info">
+                                <div class="avatar"><?= $initials ?></div>
+                                <div class="patient-details">
+                                    <h4><?= htmlspecialchars($patient_name) ?></h4>
+                                    <p class="contact-info">
+                                        📞 <?= htmlspecialchars($appointment['contact_no'] ?? 'N/A') ?> | 
+                                        ✉️ <?= htmlspecialchars($appointment['email'] ?? 'N/A') ?>
+                                    </p>
+                                    <p class="contact-info">User ID: <?= $appointment['user_id'] ?></p>
+                                </div>
+                            </div>
+                        </td>
+                        <td><?= htmlspecialchars($appointment['service_type']) ?></td>
+                        <td>
+                            <?= date('M j, Y', strtotime($appointment['appointment_date'])) ?> at 
+                            <?= date('g:i A', strtotime($appointment['appointment_time'])) ?>
+                        </td>
+                        <td><span class="status-badge status-pending">Pending</span></td>
+                        <td>
+                            <button class="btn btn-success" onclick="openApproveModal(<?= $appointment['id'] ?>, '<?= htmlspecialchars($patient_name) ?>')">
+                                <i class="fas fa-check"></i> Approve
+                            </button>
+                        </td>
+                    </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+        <?php endif; ?>
+    </div>
+    
        <!-- Live Appointments Section -->
     <div class="appointments-section live-section">
         <div class="section-header">
@@ -358,65 +418,7 @@ $pending_count = count($pending_appointments);
     </div>
 
    
-    <!-- ✅ PENDING SECTION -->
-    <div class="appointments-section pending-section">
-        <div class="section-header">
-            <h3><i class="fas fa-clock section-icon"></i> Pending Approval</h3>
-        </div>
-        <?php if (empty($pending_appointments)): ?>
-            <div class="empty-state">
-                <i class="fas fa-check-double"></i>
-                <h3>No Pending Approvals</h3>
-                <p>All appointments have been approved</p>
-            </div>
-        <?php else: ?>
-            <table class="appointments-table">
-                <thead>
-                    <tr>
-                        <th>Patient</th>
-                        <th>Service Type</th>
-                        <th>Requested Time</th>
-                        <th>Status</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody id="pendingTableBody">
-                    <?php foreach ($pending_appointments as $appointment): 
-                        $patient_name = !empty($appointment['first_name']) ? 
-                            $appointment['first_name'].' '.$appointment['last_name'] : $appointment['name'];
-                        $initials = getInitials($patient_name);
-                    ?>
-                    <tr id="row-<?= $appointment['id'] ?>">
-                        <td>
-                            <div class="patient-info">
-                                <div class="avatar"><?= $initials ?></div>
-                                <div class="patient-details">
-                                    <h4><?= htmlspecialchars($patient_name) ?></h4>
-                                    <p class="contact-info">
-                                        📞 <?= htmlspecialchars($appointment['contact_no'] ?? 'N/A') ?> | 
-                                        ✉️ <?= htmlspecialchars($appointment['email'] ?? 'N/A') ?>
-                                    </p>
-                                    <p class="contact-info">User ID: <?= $appointment['user_id'] ?></p>
-                                </div>
-                            </div>
-                        </td>
-                        <td><?= htmlspecialchars($appointment['service_type']) ?></td>
-                        <td>
-                            <?= date('M j, Y', strtotime($appointment['appointment_date'])) ?> at 
-                            <?= date('g:i A', strtotime($appointment['appointment_time'])) ?>
-                        </td>
-                        <td><span class="status-badge status-pending">Pending</span></td>
-                        <td>
-                            <button class="btn btn-success" onclick="openApproveModal(<?= $appointment['id'] ?>, '<?= htmlspecialchars($patient_name) ?>')">
-                                <i class="fas fa-check"></i> Approve
-                            </button>
-                        </td>
-                    </tr>
-                    <?php endforeach; ?>
-                </tbody>
-            </table>
-        <?php endif; ?>
-    </div>
+
 </div>
 
 <!-- ✅ Approve Modal -->
